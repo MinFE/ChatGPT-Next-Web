@@ -43,7 +43,7 @@ if (mode !== "export") {
         headers: [
           {
             key: "Link",
-            value: `<https://cdn.staticfile.org/emoji-datasource-apple/14.0.0/img/apple/64/1f603.png>; rel="preload"; as=image; crossorigin`
+            value: `<https://cdn.shopify.com>; rel="preconnect", <https://cdn.shopify.com>; rel="preconnect"; crossorigin`
           }
         ]
       },
