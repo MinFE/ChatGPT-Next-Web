@@ -39,6 +39,15 @@ if (mode !== "export") {
   nextConfig.headers = async () => {
     return [
       {
+        source: "*.html",
+        headers: [
+          {
+            key: "Link",
+            value: `<https://cdn.staticfile.org/emoji-datasource-apple/14.0.0/img/apple/64/1f603.png>; rel="preload"; as=image; crossorigin`
+          }
+        ]
+      },
+      {
         source: "/api/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
